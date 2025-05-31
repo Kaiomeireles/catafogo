@@ -1,0 +1,115 @@
+/* Ajuste para compensar a navbar fixa */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1f1f1f;
+  color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal centralizado */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 2rem; /* top padding maior por causa da navbar */
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #ff4500, #ff6a00, #ff8c00);
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Seções estilizadas */
+section {
+  margin-bottom: 4rem;
+  background-color: #2c2c2c;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #ff6600aa;
+}
+
+/* Títulos e textos */
+h1, h2, h3 {
+  color: #ffd700;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Botão */
+.button {
+  background-color: #ff4500;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background-color: #e03e00;
+}
+.equipe-section {
+  margin-top: 2rem;
+}
+
+.equipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.membro {
+  text-align: center;
+  max-width: 180px;
+}
+
+.foto-perfil {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0.5rem;
+}
