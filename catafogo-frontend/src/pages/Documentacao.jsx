@@ -7,13 +7,6 @@ export default function Documentacao() {
   return (
     <div id="root" className="body-padding">
 
-      {/* Navbar fixa */}
-      <nav className="navbar">
-        <Link to="/">Início</Link>
-        <Link to="/documentacao">Documentação</Link>
-        <Link to="/sobre">Sobre</Link>
-      </nav>
-
       {/* Carrossel de Imagens */}
       <div className="mb-12">
         <Carousel
